@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap");
+
+:root {
+  --mainblue: #40acf1;
+  --transparentBlue: rgba(64, 172, 241, 0.7);
+  --mainWhite: #ffffff;
+  --mainBlack: #292f36;
+  --mainGrey: rgb(216, 214, 214);
+  --mainYellow: #e3b505;
+}
+
+body {
+  font-family: "IranianSans";
+  color: var(--mainBlack);
+  background-color: var(--mainWhite);
+  font-weight: 600;
+  direction: rtl;
+}
+
+/* Navbar link */
+.navbar {
+  direction: ltr;
+}
+
+.bar-icon {
+  color: var(--mainBlack);
+}
+
+.navbar-nav {
+  direction: rtl;
+}
+
+.nav-link {
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: var(--mainBlack);
+  transition: all 0.5s;
+  width: 100px;
+  text-align: center;
+}
+.nav-link:hover {
+  color: var(--mainblue);
+}
+.nav-link a {
+  width: 40px;
+}
+
+.nav-icons a {
+  transition: all 0.5s;
+  font-size: 1.5rem;
+  margin: 0 5px;
+}
+
+.nav-icons a:hover {
+  color: var(--mainblue);
+}
+
+.navbar-toggler {
+  color: var(--mainblue);
+  font-size: 2.5rem;
+}
+
+@media (max-width: 767px) {
+  .navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+  }
+
+  .navbar .navbar-collapse {
+    text-align: right;
+  }
+  .nav-link {
+    text-align: right;
+  }
+}
+
+/* Heading */
+
+.header {
+  overflow: hidden;
+  clip-path: polygon(0 0, 0 90%, 50% 100%, 100% 90%, 100% 0);
+}
+
+.heigh-max {
+  color: var(--mainWhite);
+  background: url(./Media/Sky/04-3x2.jpg);
+  min-height: calc(100vh - 76px);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  animation: zoom 10s infinite;
+}
+
+@keyframes zoom {
+  50% {
+    transform: scale(1.12) translateX(-5%);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.title-heading {
+  border-left: 5px solid var(--mainblue);
+}
+.title {
+  font-size: 1.9rem;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 3rem;
+  }
+}
+.title-icon {
+  transition: all 0.25s;
+}
+
+.title-icon:hover {
+  color: var(--mainblue);
+  opacity: 0.1;
+}
+
+/* Second sun title */
+.second-sun {
+  background-color: var(--mainblue);
+  padding: 5px 15px;
+  clip-path: polygon(10% 0, 0 100%, 90% 100%, 100% 0);
+  width: fit-content;
+}
+
+/* Our Solar systems Planets */
+
+.planet-description img {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.blue-line {
+  display: block;
+  border-bottom: var(--mainblue) solid 3px;
+  width: 50px;
+  margin: 0 auto;
+}
+
+.planet-description i {
+  font-size: 3rem;
+  padding: 1rem;
+  border-radius: 50%;
+  color: var(--mainYellow);
+  background: var(--mainGrey);
+}
+
+.planet-description p {
+  line-height: 2rem;
+}
