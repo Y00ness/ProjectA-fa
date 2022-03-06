@@ -127,6 +127,7 @@ body {
 /* Second sun title */
 .second-sun {
   background-color: var(--mainblue);
+  color: var(--mainWhite);
   padding: 5px 15px;
   clip-path: polygon(10% 0, 0 100%, 90% 100%, 100% 0);
   width: fit-content;
@@ -156,4 +157,10 @@ body {
 
 .planet-description p {
   line-height: 2rem;
+}
+
+/* cards-section */
+.card-section {
+  background: var(--mainGrey);
+  direction: rtl;
 }
