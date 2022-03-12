@@ -166,17 +166,18 @@ body {
 
 .card-more-info {
   background-color: var(--mainblue);
-  clip-path: polygon(0 0, 10% 100%, 90% 100%, 100% 0);
+  clip-path: polygon(15% 0, 0 100%, 100% 100%, 85% 0);
   height: fit-content;
   text-decoration: none;
+  text-align: center;
   color: var(--mainWhite);
+  transition: all 0.5s linear;
 }
 
 .card-more-info:hover {
   text-decoration: none;
   color: var(--mainWhite);
-  font-weight: 700;
-  font-size: 1.2rem;
+  clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0);
 }
 .card-footer a {
   color: var(--mainBlack);
