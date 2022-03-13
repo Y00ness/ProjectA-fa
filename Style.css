@@ -182,3 +182,10 @@ body {
 .card-footer a {
   color: var(--mainBlack);
 }
+
+/* white road section */
+.img-white-road {
+  background: url(./Media/Sky/05-3x2.jpg);
+  height: 150px;
+  width: 100vw;
+}
