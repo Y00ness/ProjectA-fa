@@ -189,3 +189,7 @@ body {
   height: 150px;
   width: 100vw;
 }
+
+.Sun {
+  background: var(--mainblue);
+}
