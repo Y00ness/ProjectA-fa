@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project A</title>
 
-    <link rel="stylesheet" href="./Style.css" />
-
     <!-- Font awesome for icons -->
     <link
       rel="stylesheet"
@@ -25,6 +23,7 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="./Style.css" />
   </head>
   <body>
     <!-- Nav bar -->
@@ -76,7 +75,7 @@
     <!--End Nav bar -->
     <!-- Header section -->
     <header class="header">
-      <div class="container-fluid header">
+      <div class="container-fluid">
         <div class="row heigh-max align-items-center">
           <div class="col-md-9 text-right pr-3 ml-auto">
             <h5 class="title-heading d-inline-block p-2">اکتشافات جدید</h5>
@@ -86,7 +85,7 @@
             <h2>
               خورشید با فاصله ۸ ثانیه
               <a href="" class="title-icon d-inline-block"
-                ><i class="bi bi-star-fill"></i
+                ><i class="fa-solid fa-star"></i
               ></a>
             </h2>
           </div>
@@ -337,16 +336,60 @@
         </div>
       </section>
       <!-- End of Cards sections -->
-      <!-- Img background with 2 sections -->
-      <section class="">
+      <!-- Sun and Moon 2 sections -->
+      <section class="Sun-Moon">
         <div
-          class="img-white-road d-flex justify-content-center align-items-center"
+          class="img-white-road d-flex flex-column flex-md-row justify-content-center align-items-center py-5"
         >
-          <div class="Sun"><p>خوشید درخشان</p></div>
-          <div class="Moon"><p>ماه تابان</p></div>
+          <div
+            class="Sun text-center d-flex justify-content-around align-items-center my-2"
+          >
+            <p>خوشید درخشان</p>
+            <i class="fa-solid fa-sun"></i>
+          </div>
+          <div
+            class="Moon text-center d-flex justify-content-around align-items-center my-2"
+          >
+            <p>ماه تابان</p>
+            <i class="fa-solid fa-moon"></i>
+          </div>
         </div>
       </section>
-      <!-- END Img background with 2 sections -->
+      <!-- END Sun and Moon 2 sections -->
+      <!-- Search in sky -->
+      <section class="Search-in-sky p-5">
+        <div class="container">
+          <div
+            class="d-flex flex-column flex-md-row flex-wrap justify-content-center"
+          >
+            <h4 class="align-self-center font-weight-bold">جستحو در</h4>
+            <h4 class="second-sun mx-1 align-self-center">آسمان</h4>
+          </div>
+          <div class="">
+            <div class="d-flex flex-column flex-lg-row">
+              <div>
+                <div class="SIS-card d-flex img-thumbnail my-1">
+                  <i class="fa-solid fa-cloud-moon px-2"></i>
+                  <h5 class="m-0">
+                    <span class="font-weight-bold pl-1">گشت و گذار</span>در
+                    جهانی ناشناخته
+                  </h5>
+                </div>
+              </div>
+              <div class="Search-in-sky-img">
+                <img
+                  src="./Media/Sky/21-1x1.jpg"
+                  class="img-fluid Search-in-sky-img"
+                />
+                <a href="#" class="Blue-SIS">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END Search in sky -->
     </main>
     <footer>
       <div>

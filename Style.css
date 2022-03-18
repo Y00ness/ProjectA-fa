@@ -84,8 +84,8 @@ body {
 
 .heigh-max {
   color: var(--mainWhite);
-  background: url(./Media/Sky/04-3x2.jpg);
   min-height: calc(100vh - 76px);
+  background: url(./Media/Sky/04-3x2.jpg);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -94,6 +94,9 @@ body {
 }
 
 @keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
   50% {
     transform: scale(1.12) translateX(-5%);
   }
@@ -121,7 +124,8 @@ body {
 
 .title-icon:hover {
   color: var(--mainblue);
-  opacity: 0.1;
+  opacity: 0.9;
+  display: inline-block;
 }
 
 /* Second sun title */
@@ -183,13 +187,63 @@ body {
   color: var(--mainBlack);
 }
 
-/* white road section */
+/* Sun-Moon */
+.Sun-Moon {
+  overflow: hidden;
+}
+.Sun-Moon p {
+  padding: 0;
+  margin: 0;
+  width: 50%;
+}
+
 .img-white-road {
   background: url(./Media/Sky/05-3x2.jpg);
-  height: 150px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  /* background-repeat: no-repeat; */
+  /* height: 200px; */
   width: 100vw;
 }
 
 .Sun {
-  background: var(--mainblue);
+  background: rgba(227, 181, 5, 0.85);
+  width: 400px;
+  height: 100px;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.Moon {
+  background-color: rgba(41, 47, 54, 0.85);
+  width: 400px;
+  height: 100px;
+  color: var(--mainWhite);
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.Sun-Moon i {
+  color: var(--mainblue);
+  font-size: 2.5rem;
+  transition: all linear 0.3s;
+}
+
+.Sun-Moon i:hover {
+  transform: translateY(-20%);
+}
+
+/* Search in the sky */
+
+.Search-in-sky {
+  background: var(--mainGrey);
+}
+
+/* .SIS-card { */
+  /* background: var(--mainWhite); */
+  /* padding: 5px 10px;
+  border-radius: 5px; */
+}
+
+.SIS-card i {
+  font-size: 1.5rem;
 }
