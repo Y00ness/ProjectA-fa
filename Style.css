@@ -238,12 +238,89 @@ body {
   background: var(--mainGrey);
 }
 
-/* .SIS-card { */
-  /* background: var(--mainWhite); */
-  /* padding: 5px 10px;
-  border-radius: 5px; */
+.SIS-card {
+  background: var(--mainWhite);
+  border-radius: 5px;
+  opacity: 0.5;
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+
+.SIS-card:hover {
+  opacity: 1;
+  transform: scale(1.02);
 }
 
 .SIS-card i {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  color: var(--mainYellow);
+}
+
+.SIS-IS {
+  background: var(--mainblue);
+  position: relative;
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+}
+.SIS-img {
+  transition: all 1s;
+}
+
+.SIS-IS:hover .SIS-img {
+  opacity: 0.5;
+  transform: scale(1.2);
+}
+
+.SIS-link {
+  color: var(--mainBlack);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 3rem;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.SIS-IS:hover .SIS-link {
+  opacity: 1;
+}
+
+.SIS-link:hover {
+  color: var(--mainWhite);
+}
+
+.Beauty-in-sky {
+  position: relative;
+  background: var(--mainYellow);
+  /* padding: 0; */
+}
+
+.BS-img {
+  transition: all 1s;
+}
+
+.Beauty-in-sky:hover .BS-img {
+  opacity: 0.7;
+}
+
+.BS-I-insideBorder {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0%;
+  height: 0%;
+  /* background-color: #ffffff; */
+  border: solid var(--mainWhite) 1px;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 1s;
+}
+
+.Beauty-in-sky:hover .BS-I-insideBorder {
+  opacity: 1;
+  width: 80%;
+  height: 80%;
+  border-width: 5px;
 }
