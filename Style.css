@@ -294,7 +294,6 @@ body {
 .Beauty-in-sky {
   position: relative;
   background: var(--mainYellow);
-  /* padding: 0; */
 }
 
 .BS-img {
@@ -311,7 +310,6 @@ body {
   left: 50%;
   width: 0%;
   height: 0%;
-  /* background-color: #ffffff; */
   border: solid var(--mainWhite) 1px;
   transform: translate(-50%, -50%);
   opacity: 0;
