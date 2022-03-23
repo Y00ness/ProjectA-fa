@@ -291,6 +291,8 @@ body {
   color: var(--mainWhite);
 }
 
+/* Beauty in the sky */
+
 .Beauty-in-sky {
   position: relative;
   background: var(--mainYellow);
@@ -321,4 +323,29 @@ body {
 .Beauty-in-sky:hover:after {
   transform: scale(1);
   opacity: 1;
+}
+
+/* Email form */
+
+.Email-section {
+  background: url(./Media/Sky/03-3x2.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  /* height: 250px; */
+}
+
+.Email-form {
+  height: 100%;
+}
+
+.Email-input {
+  background: none;
+  width: 50%;
+  color: var(--mainWhite);
+}
+
+.form-submit {
+  width: 50%;
+  background: none;
 }
