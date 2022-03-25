@@ -340,12 +340,35 @@ body {
 }
 
 .Email-input {
-  background: none;
+  background: rgba(41, 47, 54, 0.5);
   width: 50%;
-  color: var(--mainWhite);
+  border: solid var(--mainYellow) 1px;
+  font-weight: bold;
+}
+
+.Email-input::placeholder {
+  color: var(--mainYellow);
+  font-weight: bold;
+}
+
+.Email-input:focus {
+  background: rgba(41, 47, 54, 0.5);
+  color: var(--mainYellow);
+  direction: ltr;
+  font-weight: bold;
 }
 
 .form-submit {
   width: 50%;
-  background: none;
+  background: rgba(41, 47, 54, 0.5);
+  border: solid var(--mainYellow) 1px;
+  color: var(--mainYellow);
+  font-weight: bold;
+}
+
+.form-submit:hover {
+  background: var(--mainYellow);
+  border: solid var(--mainYellow) 1px;
+  color: var(--mainWhite);
+  font-weight: bold;
 }
