@@ -332,7 +332,6 @@ body {
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  /* height: 250px; */
 }
 
 .Email-form {
@@ -371,4 +370,17 @@ body {
   border: solid var(--mainYellow) 1px;
   color: var(--mainWhite);
   font-weight: bold;
+}
+
+/* Stars in the sky */
+
+.stars-in-the-sky .grey-card {
+  background-color: var(--mainBlack);
+  color: var(--mainWhite);
+  padding: 0.5rem;
+}
+
+.stars-in-the-sky .grey-card i {
+  color: var(--mainYellow);
+  font-size: 1rem;
 }
