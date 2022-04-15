@@ -16,7 +16,9 @@ body {
   font-weight: 600;
   direction: rtl;
 }
-
+.rtl {
+  direction: rtl;
+}
 /* Navbar link */
 .navbar {
   direction: ltr;
@@ -374,13 +376,30 @@ body {
 
 /* Stars in the sky */
 
+.video-section .video {
+  width: 100vw;
+  height: 100vh;
+}
+
 .stars-in-the-sky .grey-card {
   background-color: var(--mainBlack);
   color: var(--mainWhite);
-  padding: 0.5rem;
+  padding: 1rem;
+  width: 300px;
 }
 
 .stars-in-the-sky .grey-card i {
   color: var(--mainYellow);
-  font-size: 1rem;
+  font-size: 2rem;
+}
+
+.stars-in-the-sky .grey-card .p1 {
+  font-weight: 500;
+  margin: 0.8rem 0 0;
+}
+
+.stars-in-the-sky .grey-card .p2 {
+  font-weight: bold;
+  margin: 0;
+  font-size: 1.2rem;
 }
