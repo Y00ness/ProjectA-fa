@@ -376,30 +376,57 @@ body {
 
 /* Stars in the sky */
 
-.video-section .video {
-  width: 100vw;
+.stars-in-the-sky-box {
   height: 100vh;
+}
+
+.stars-in-the-sky {
+  position: relative;
+  height: 85vh;
+  overflow: hidden;
+  clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+  background-color: var(--mainblue);
+}
+
+.video-section {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.video-section .video {
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+  object-fit: cover;
+}
+
+.stars-in-the-sky .card-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.stars-in-the-sky .card-box .Card-a {
+  width: 300px;
 }
 
 .stars-in-the-sky .grey-card {
   background-color: var(--mainBlack);
   color: var(--mainWhite);
-  padding: 1rem;
-  width: 300px;
+  transition: all 0.5s linear;
+}
+
+.stars-in-the-sky .grey-card:hover {
+  color: var(--mainBlack);
+  background-color: var(--mainWhite);
 }
 
 .stars-in-the-sky .grey-card i {
   color: var(--mainYellow);
-  font-size: 2rem;
-}
-
-.stars-in-the-sky .grey-card .p1 {
-  font-weight: 500;
-  margin: 0.8rem 0 0;
-}
-
-.stars-in-the-sky .grey-card .p2 {
-  font-weight: bold;
-  margin: 0;
-  font-size: 1.2rem;
+  font-size: 4rem;
 }
