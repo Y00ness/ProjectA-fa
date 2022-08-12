@@ -345,9 +345,14 @@ body {
   width: 50%;
   border: solid var(--mainYellow) 1px;
   font-weight: bold;
+  direction: ltr;
+  font-weight: bold;
+  color: var(--mainYellow);
 }
 
-.Email-input::placeholder {
+.Email-input::placeholder,
+.Email-input:focus::placeholder {
+  text-align: right;
   color: var(--mainYellow);
   font-weight: bold;
 }
@@ -357,6 +362,8 @@ body {
   color: var(--mainYellow);
   direction: ltr;
   font-weight: bold;
+  border: solid var(--mainYellow) 1px;
+  box-shadow: none;
 }
 
 .form-submit {
